@@ -1,0 +1,14 @@
+
+<menu
+   
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_sensor" android:title="Sensor" android:icon="@drawable/ic_monitor"></item>
+    
+  <item android:id="@+id/item_param" android:title="Parameters" android:icon="@drawable/ic_param"></item>
+    <!--Changed for test version @2.23  <item android:id="@+id/item_impulse" android:title="Create Impluse" android:icon="@drawable/ic_param"></item>
+    <item android:id="@+id/item_map" android:title="View Map" android:icon="@drawable/ic_browser"></item>
+	<item android:id="@+id/item_weather" android:title="Weather" android:icon="@drawable/ic_wdtwogo"></item>
+	<item android:id="@+id/item_settings" android:title="Settings" android:icon="@drawable/ic_tweaks"></item> -->	
+	 <item android:id="@+id/item_exit" android:title="Exit" android:icon="@drawable/ic_switch"></item>	
+
+</menu>

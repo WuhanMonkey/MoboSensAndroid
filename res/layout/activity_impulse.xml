@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.darvds.ribbonmenu.RibbonMenuView
+            android:id="@+id/ribbonMenuView1"
+            android:layout_width="181dp"
+            android:layout_height="396dp" >
+        </com.darvds.ribbonmenu.RibbonMenuView>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:onClick="start"
+        android:text="Send Impulse" />
+
+    <CheckBox
+        android:id="@+id/Zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/One"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:text="Zero" />
+
+    <CheckBox
+        android:id="@+id/One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Zero"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/frameLayout1"
+        android:text="One" />
+
+    <CheckBox
+        android:id="@+id/Three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Two"
+        android:layout_below="@+id/Two"
+        android:layout_marginTop="27dp"
+        android:text="Three" />
+
+    <CheckBox
+        android:id="@+id/Two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Zero"
+        android:layout_below="@+id/One"
+        android:layout_marginTop="28dp"
+        android:text="Two" />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/start_sensor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="49dp"
+        android:onClick="startSensor"
+        android:text="Start Sensor" />
+
+    <Button
+        android:id="@+id/param_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="49dp"
+        android:onClick = "configureParameters"
+        android:text="Parameters" />
+
+    <Button
+        android:id="@+id/view_map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:onClick = "viewMap"
+        android:text="View Map" />
+
+    <Button
+        android:id="@+id/weather_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/start_sensor_button"
+        android:layout_below="@+id/view_map_button"
+        android:layout_marginTop="84dp"
+        android:onClick = "weatherInformation"
+        android:text="Weather" />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weather_button"
+        android:layout_alignBottom="@+id/weather_button"
+        android:layout_alignLeft="@+id/param_button"
+        android:onClick = "configureSettings"
+        android:text="Settings" />
+
+    //calibrate button
+    
+    <!--  <Button
+        android:id="@+id/start_calibrate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weather_button"
+        android:layout_below="@+id/start_sensor_button"
+        android:layout_marginTop="18dp"
+        android:onClick="startCalibrate"
+        android:text="Start Calibrate" />
+	-->
+</RelativeLayout>

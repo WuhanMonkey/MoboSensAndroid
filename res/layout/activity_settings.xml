@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<!--        <TextView android:id="@+id/temp_unit_label" -->
+<!--         android:text="Temperature Units" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--           android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+<!-- 		<RadioGroup -->
+<!--           android:id="@+id/temp_unit" -->
+<!--           android:layout_width="match_parent" -->
+<!--           android:layout_height="wrap_content" -->
+<!--           android:layout_alignParentLeft="true" -->
+<!--           android:layout_below="@+id/temp_unit_label" -->
+<!--           android:textAppearance="?android:attr/textAppearanceLarge" > -->
+
+<!--           <RadioButton -->
+<!--               android:id="@+id/radio0" -->
+<!--               android:layout_width="wrap_content" -->
+<!--               android:layout_height="wrap_content" -->
+<!--               android:checked="true" -->
+<!--               android:text="Fahrenheit °F" -->
+<!--               android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+
+<!--           <RadioButton -->
+<!--               android:id="@+id/radio1" -->
+<!--               android:layout_width="wrap_content" -->
+<!--               android:layout_height="wrap_content" -->
+<!--               android:text="Celcius °C" -->
+<!--               android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+<!--       </RadioGroup> -->
+      
+		
+		     <CheckBox
+            android:id="@+id/UseAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Use Address instead of GPS" 
+              android:textAppearance="?android:attr/textAppearanceMedium" />
+		     
+		     
+		     
+		 <TextView android:id="@+id/addr_label"
+        android:text="Address/Land Mark/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/UseAddr"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+		 
+		 
+		        <EditText
+            android:id="@+id/addr_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_below="@+id/addr_label"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:enabled="false"
+            android:ems="10" >
+
+          
+        </EditText>
+		   
+	   <Button
+            android:id="@+id/find_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addr_field"
+            android:text="Find Location" />
+
+        <Button
+            android:id="@+id/location_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addr_field"
+            android:layout_toRightOf="@+id/find_location"
+            android:text="Save" />
+		
+		     
+      <FrameLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <com.darvds.ribbonmenu.RibbonMenuView
+        android:id="@+id/ribbonMenuView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+     
+
+    </com.darvds.ribbonmenu.RibbonMenuView>
+
+</FrameLayout>
+
+      
+    
+</RelativeLayout>

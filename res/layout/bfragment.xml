@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+
+  <TextView
+            android:id="@+id/bias_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stabilizing Cycles"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+  <TextView
+            android:id="@+id/cycle_note_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Each cycle takes the amount of time specified by analysis duration."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+          <EditText
+            android:id="@+id/bias_time_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text = "2"
+            android:inputType="number" >
+
+            
+        </EditText>
+<SeekBar
+    		android:progress = "20"
+            android:id="@+id/seekBar4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<TextView
+            android:id="@+id/analysis_duration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analysis Duration"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+            android:id="@+id/analysis_duration_note_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The period of the frequency change wave."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+  <EditText
+            android:id="@+id/analysis_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text = "30"
+            android:inputType="number" >
+
+            
+        </EditText>
+<SeekBar
+    		android:progress = "0"
+            android:id="@+id/seekBar5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+
+        
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    
+    
+    <nano.Mobo.Sens.NonFocusingScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	<LinearLayout
+	    android:id="@+id/fragment_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+ </LinearLayout>
+   </nano.Mobo.Sens.NonFocusingScrollView>
+    
+    
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <com.darvds.ribbonmenu.RibbonMenuView
+        android:id="@+id/ribbonMenuView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
+</RelativeLayout>
+

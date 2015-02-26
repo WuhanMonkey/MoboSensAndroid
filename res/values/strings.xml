@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">MoboSens</string>
+    <string name="dialog_fire_missiles">Do you want to contribute this data to our data center? Your data will be sent anonymously.</string>
+    <string name="dialog_fire_upload">Do you want to upload result as a tweet this time?</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_mobo_sens">MoboSens</string>
+    <string name="start_sensor_descript">The button for sensing page.</string>
+    <string name="title_activity_sensing">Sensing</string>
+    <string name="title_activity_parameters">Parameters</string>
+    <string name="title_activity_view_map">View Map</string>
+    <string name="title_activity_weather">Weather</string>
+    <string name="title_activity_settings">Settings</string>
+     <string name="title_activity_impulse">Create Impulse</string>
+    <string name="menu_Menu">Menu</string>
+    <string name="fire">Yes</string>
+    <string name="OK">Ok</string>   
+    <string name="not_accurate">The sensing time elapsed is not long enough, the result might be inaccurate.</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_drive_wave">DriveWave</string>
+    <string name="title_activity_bias_voltage">BiasVoltage</string>
+    <string name="title_activity_analysis">Analysis</string>
+
+    <string-array name="wave_type_arrays">
+        <item>Sine Wave</item>
+        <item>Triangular Wave</item>
+        <item>Frequency Change Wave</item>
+        <item>Triangular Modulation Wave</item>
+    </string-array>
+
+    <string name="title_activity_exist_ghost">ExistGhost</string>
+    <string name="title_activity_splash_screen">MoboSens</string>
+    <color name="black">#000000</color>
+    <string name="cserver">http://junleqian.com:8080/items/</string>
+
+</resources>

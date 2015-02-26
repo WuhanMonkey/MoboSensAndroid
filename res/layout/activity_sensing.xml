@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/inner_content" >
+    
+   <!--   <nano.Mobo.Sens.ChartSurfaceView
+        android:id="@+id/chart_surface"
+       android:layout_width="fill_parent"
+   		android:layout_height="fill_parent" 
+   		android:layout_above="@+id/progressBar1"
+        > 
+
+    </nano.Mobo.Sens.ChartSurfaceView>deprecated layout-->
+ 
+   <LinearLayout
+       android:background="@color/black"
+       android:id="@+id/chart_surface"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" 
+       android:layout_above="@+id/progressBar1"
+   ></LinearLayout>
+   
+   <ProgressBar
+       android:id="@+id/progressBar1"
+       style="?android:attr/progressBarStyleHorizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/status_label"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="120dp"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/status_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/status_label"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Ready"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/status_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status_content"
+        android:layout_below="@+id/status_content"
+        android:text="Press Start to begin collecting data. Make sure the sensor is connected to the headset interface."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/inner_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_details"
+        android:layout_centerHorizontal="true"
+        android:onClick="startSensing"
+        android:text="Start" />
+    
+    <CheckBox
+            android:id="@+id/checkBox1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pinhole"
+            android:layout_toRightOf="@+id/inner_start"
+            android:layout_alignBaseline="@id/inner_start"
+             />
+  <Button
+        android:id="@+id/inner_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_details"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopSensing"
+        android:text="Stop" 
+        android:visibility="invisible"    >
+      
+  </Button>
+  
+    <Button
+        android:id="@+id/inner_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_details"
+        android:layout_centerHorizontal="true"
+        android:onClick="shipGeoData"
+        android:text="Cloud" 
+        android:visibility="invisible"    >
+      
+  </Button>
+      <ImageButton
+        android:id="@+id/btn_account"
+        android:layout_width="wrap_content"
+        android:scaleType="fitStart"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf ="@+id/inner_twitter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/status_label"
+        android:layout_below="@+id/status_details"
+        android:onClick="AccountClick"
+        android:src="@drawable/twitterd" 
+        android:visibility="invisible" />
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <com.darvds.ribbonmenu.RibbonMenuView
+        android:id="@+id/ribbonMenuView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </com.darvds.ribbonmenu.RibbonMenuView>
+
+</FrameLayout>
+<!-- Changed for test version @2.23 -->
+    <CheckBox
+        android:id="@+id/checkBoxCalibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inner_twitter"
+        android:layout_alignBottom="@+id/inner_twitter"
+        android:layout_toRightOf="@+id/inner_twitter"
+        android:text="Calibrate" 
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inner_twitter"
+        android:layout_alignBottom="@+id/inner_twitter"
+        android:layout_toRightOf="@+id/btn_account"
+        android:text="Sin" 
+        android:visibility="invisible" />
+
+</RelativeLayout>
