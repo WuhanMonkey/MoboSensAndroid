@@ -952,7 +952,7 @@ public class Sensing extends android.support.v4.app.FragmentActivity implements 
 						concentration = -1;
 					}
 					else{
-					concentration = (5686.44563 - peak)/16.52127;
+					concentration = (5352.53385 - peak)/16.74462;
 					}
 				}
 				else{
