@@ -8,4 +8,4 @@ More information please visit http://nanobionics.mntl.illinois.edu/mobosens/
 or contact Chengpeng at hcp199242@gmail.com
 
 
-![ScreenShot](https://github.com/WuhanMonkey/MoboSensAndroid/blob/master/Mobosens1.png=100x20)
+![ScreenShot](https://github.com/WuhanMonkey/MoboSensAndroid/blob/master/Mobosens1.png=100x2000)
