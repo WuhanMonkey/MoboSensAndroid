@@ -6,3 +6,6 @@ Credit to Caleb Qian and Chengpeng Hu from University of Illinois at Urbana-Cham
 
 More information please visit http://nanobionics.mntl.illinois.edu/mobosens/
 or contact Chengpeng at hcp199242@gmail.com
+
+
+![ScreenShot](https://github.com/WuhanMonkey/MoboSensAndroid/blob/master/Mobosens1.png)
